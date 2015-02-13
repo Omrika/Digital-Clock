@@ -35,4 +35,15 @@ $(document).ready(function(){
 
 		displayTime();
 		setInterval(displayTime, 1000);
+
+		function displayDate() {
+			var CurrentTime = new Date();
+			var month = CurrentTime.getMonth();
+			var date = CurrentTime.getDate();
+			var year = CurrentTime.getYear();
+
+			var dateDiv = document.getElementById('Date');
+			dateDiv.innerText = month + " " + date + "," + " " + year;
+		} 
+
 });
