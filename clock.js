@@ -37,13 +37,15 @@ $(document).ready(function(){
 		setInterval(displayTime, 1000);
 
 		function displayDate() {
-			var CurrentTime = new Date();
-			var month = CurrentTime.getMonth();
-			var date = CurrentTime.getDate();
-			var year = CurrentTime.getYear();
+			var CurrentDay = new Date();
+			var month = CurrentDay.getMonth();
+			var date = CurrentDay.getDate();
+			var year = CurrentDay.getYear();
+			
 
-			var dateDiv = document.getElementById('Date');
+			var dateDiv = document.getElementById('date');
 			dateDiv.innerText = month + " " + date + "," + " " + year;
 		} 
 
+		displayDate();	
 });
